@@ -1,0 +1,17 @@
+<div class = "add">
+  <div class = "form">
+  <h3 style = margin-top:6px;> Add Student</h3>
+  <form>
+    <input type = "text" name = "rollno" [(ngModel)] = "student.rollno" placeholder = "rollno"><br><br>
+    <input type = "date" name = "dob" [(ngModel)] = "student.dob" placeholder = "dob"/><br><br>
+    <input type = "text" name = "firstName" [(ngModel)] = "student.firstName" placeholder = "firstName"/><br><br>
+    <input type = "text" name = "lastName" [(ngModel)] = "student.lastName" placeholder = "lastName"/><br><br>
+    <input type = "text" name = "parentName" [(ngModel)] = "student.parentName" placeholder = "parentName"/><br><br>
+    <input type = "text" name = "parentPhone" [(ngModel)] = "student.parentPhone" placeholder = "parentPhone"/><br><br>
+    <input type = "text" name = "address" [(ngModel)] = "student.address" placeholder = "address"/><br><br>
+    </form>
+    <input type = "button" name = "date" (click) = "addStudent(student)" value = "Add Student"/>
+    <input type = "button" name = "back" value = "Back" (click) = "navigateToStudent()"/>
+  
+  </div>
+</div>

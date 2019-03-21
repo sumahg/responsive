@@ -1,0 +1,36 @@
+<div class = "table1">
+  <table>
+    <thead>
+       <tr>
+         <th>Rollno</th>
+         <th>First name</th>
+         <th>Last name</th>
+         <th>DOB</th>
+         <th>Parent name</th>
+         <th>Parent phone</th>
+         <th>Address</th>
+         <th>Edit</th>
+         <th>Delete</th>
+       </tr>
+    </thead>
+    <tbody *ngFor="let s of students">
+        <td> {{s.rollno}} </td>
+        <td> {{s.firstName}} </td>
+        <td> {{s.lastName}} </td>
+        <td> {{s.dob}} </td>
+        <td> {{s.parentName}} </td>
+        <td> {{s.parentPhone}} </td>
+        <td> {{s.address}} </td>
+        <td><i class="fa fa-pencil-square-o" aria-hidden="true" style = "color:blue" (click) = "editStudent(s)"></i></td>
+        <td><i class="fa fa-times" aria-hidden="true" style = "color:red" (click) = "deleteStudent(s)"></i></td>
+
+    </tbody>
+  </table><br><br>
+  </div>
+  <div class = "buttons">
+      <input type = "button" name = "delete" (click) = "deleteAll()" value = "Delete all"/>
+      <input type = "button" name = "back" value = "Back" (click) = "navigateToStudent()"/>
+      <input type = "button" name = "logout" value = "Logout" (click) = "navigateToLogin()"/>
+  </div>
+
+

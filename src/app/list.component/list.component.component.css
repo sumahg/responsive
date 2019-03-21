@@ -1,0 +1,45 @@
+.table1{
+    max-width:927px;
+    margin: 50px auto;
+    -webkit-overflow-y: auto;
+    -moz-overflow-y: auto;
+    overflow-y: auto;
+    
+}
+table{
+   max-width:100%;
+   overflow-x: auto;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+th,td{
+    padding: 15px;
+    text-align:center;
+    margin:20px;
+}
+th{
+    background-color: aqua;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+input{
+    margin:6px;
+    padding:8px;
+    background-color: blue;
+    color:white;
+    border: 1px solid blue;
+    border-radius: 4px;
+    width:150px;
+    
+}
+.buttons{
+    max-width:927px;
+    margin:-50px auto;
+}
+
+
