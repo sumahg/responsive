@@ -26,7 +26,7 @@ export class EditStudentComponent implements OnInit {
   }
   updateStudent(student){
     this.studentService.updateStudent(student);
-    student = {rollno: 0, dob : '', firstName: '',lastName:'', parentName: '', parentPhone: '', address:''}
+    student = {rollno: 0, dob : '', firstName: '',lastName:'', parentName: '', parentPhone: '',teacher:'', address:''}
     this.router.navigate(['/list-student']);
   }
   navigateToStudent(){

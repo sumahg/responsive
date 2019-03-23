@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AddComponentComponent implements OnInit {
 
   constructor(private studentService:StudentService, private router: Router) { }
-  student = {rollno: 0, dob : '', firstName: '',lastName:'', parentName: '', parentPhone: '', address:''}
+  student = {rollno: 0, dob : '', firstName: '',lastName:'', parentName: '', parentPhone: '',teacher:'', address:''}
 
   ngOnInit() {
   }

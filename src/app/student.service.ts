@@ -14,8 +14,8 @@ export default class StudentService {
   getStudents() {
     if(this.students.length == 0){
       this.students = [
- {rollno: 1,dob : '03/16/2019', firstName:'Suma',lastName:'madhu', parentName: 'Govindaraju', parentPhone: '99999', address:'Bangalore'},
- {rollno: 2,dob :'03/16/2019',firstName: 'Yuktha',lastName:'madhu',  parentName: 'Madhu', parentPhone: '99999', address:'Bangalore'}
+ {rollno: 1,dob : '03/16/2019', firstName:'Suma',lastName:'madhu', parentName: 'Govindaraju', parentPhone: '99999',teacher: 'Vivek', address:'Bangalore'},
+ {rollno: 2,dob :'03/16/2019',firstName: 'Yuktha',lastName:'madhu',  parentName: 'Madhu', parentPhone: '99999',teacher: 'Rashmi', address:'Bangalore'}
      ];
      this.setLocalStorageStudents(this.students);
     }else{

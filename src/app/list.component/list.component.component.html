@@ -1,4 +1,8 @@
 <div class = "table1">
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:345px">
+      <input type="text" placeholder="Search student by teacher.." name="search2" [(ngModel)] = "teacher">
+      <button (click) = "search(teacher)"><i class="fa fa-search"></i></button>
+    </form><br><br>
   <table>
     <thead>
        <tr>
@@ -8,6 +12,7 @@
          <th>DOB</th>
          <th>Parent name</th>
          <th>Parent phone</th>
+         <th>Teacher</th>
          <th>Address</th>
          <th>Edit</th>
          <th>Delete</th>
@@ -20,6 +25,7 @@
         <td> {{s.dob}} </td>
         <td> {{s.parentName}} </td>
         <td> {{s.parentPhone}} </td>
+        <td> {{s.teacher}} </td>
         <td> {{s.address}} </td>
         <td><i class="fa fa-pencil-square-o" aria-hidden="true" style = "color:blue" (click) = "editStudent(s)"></i></td>
         <td><i class="fa fa-times" aria-hidden="true" style = "color:red" (click) = "deleteStudent(s)"></i></td>
@@ -28,6 +34,7 @@
   </table><br><br>
   </div>
   <div class = "buttons">
+      <input type = "button" name = "list" (click) = "listAll()" value = "List all"/>
       <input type = "button" name = "delete" (click) = "deleteAll()" value = "Delete all"/>
       <input type = "button" name = "back" value = "Back" (click) = "navigateToStudent()"/>
       <input type = "button" name = "logout" value = "Logout" (click) = "navigateToLogin()"/>
